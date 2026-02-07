@@ -7,7 +7,8 @@ import dao.LevelData;
 import javax.swing.*;
 
 /**
- * Represents a base Zombie with common behavior like movement, collision, and health.
+ * Represents a base Zombie with common behavior like movement, collision, and
+ * health.
  */
 public class Zombie {
 
@@ -23,6 +24,7 @@ public class Zombie {
 
     /**
      * Constructs a Zombie in the specified lane and game panel.
+     *
      * @param parent
      * @param lane
      */
@@ -32,8 +34,8 @@ public class Zombie {
     }
 
     /**
-     * Moves the zombie forward or attacks a plant if in its path.
-     * Ends the game if the zombie reaches the left edge of the screen.
+     * Moves the zombie forward or attacks a plant if in its path. Ends the game
+     * if the zombie reaches the left edge of the screen.
      */
     public void advance() {
         if (isMoving) {
@@ -42,8 +44,8 @@ public class Zombie {
 
             // Check if zombie intersects with any plant collider in its lane
             for (int i = myLane * 9; i < (myLane + 1) * 9; i++) {
-                if (gp.getColliders()[i].assignedPlant != null &&
-                    gp.getColliders()[i].isInsideCollider(posX)) {
+                if (gp.getColliders()[i].assignedPlant != null
+                        && gp.getColliders()[i].isInsideCollider(posX)) {
                     isCollides = true;
                     collided = gp.getColliders()[i];
                 }
@@ -83,7 +85,7 @@ public class Zombie {
      */
     public void slow() {
         slowInt = 50;
-        health=0;
+        health = 0;
     }
 
     /**

@@ -6,8 +6,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 /**
- * Represents a Peashooter plant that periodically fires peas
- * when there are zombies in its lane.
+ * Represents a Peashooter plant that periodically fires peas when there are
+ * zombies in its lane.
  */
 public class Peashooter extends Plant {
 
@@ -29,7 +29,7 @@ public class Peashooter extends Plant {
             if (getGp().getLaneZombies().get(y).size() > 0) {
                 // If so, create and add a new Pea projectile to that lane
                 getGp().getLanePeas().get(y).add(
-                    new Pea(getGp(), y, 103 + this.getX() * 100)
+                        new Pea(getGp(), y, 103 + this.getX() * 100)
                 );
             }
         });

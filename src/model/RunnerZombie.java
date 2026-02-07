@@ -11,12 +11,12 @@ import view.GamePanel;
  * @author JoseAlbertoPortugalO
  */
 public class RunnerZombie extends Zombie {
-    
+
     public RunnerZombie(GamePanel parent, int lane) {
         super(parent, lane);
-        
+
         // Set higher speed than a normal zombie
         setSpeed(3);
     }
-    
+
 }

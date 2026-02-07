@@ -6,8 +6,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 /**
- * Represents a FreezePeashooter plant that shoots FreezePeas at regular intervals.
- * 
+ * Represents a FreezePeashooter plant that shoots FreezePeas at regular
+ * intervals.
+ *
  * FreezePeas damage zombies and slow them down.
  */
 public class FreezePeashooter extends Plant {
@@ -18,8 +19,8 @@ public class FreezePeashooter extends Plant {
      * Constructor for the FreezePeashooter.
      *
      * @param parent The GamePanel where this plant is placed.
-     * @param x      The column position in the grid.
-     * @param y      The row (lane) position in the grid.
+     * @param x The column position in the grid.
+     * @param y The row (lane) position in the grid.
      */
     public FreezePeashooter(GamePanel parent, int x, int y) {
         super(parent, x, y);

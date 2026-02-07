@@ -41,7 +41,6 @@ public class Collider extends JPanel implements MouseListener {
         this.al = al;
     }
 
-
     @Override
     public void mouseClicked(MouseEvent e) {
 

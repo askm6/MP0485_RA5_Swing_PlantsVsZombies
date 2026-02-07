@@ -95,7 +95,7 @@ public class GamePanel extends JLayeredPane implements MouseMotionListener {
         setLayout(null);  // Set layout to null for absolute positioning
         addMouseMotionListener(this);  // Listen for mouse movement
         this.sunScoreboard = sunScoreboard;
-        setSunScore(100);  // Initialize the sun score
+        setSunScore(1000);  // Initialize the sun score
 
         // Load images for background, plants, zombies, and other game elements
         bgImage = new ImageIcon(this.getClass().getResource("/images/mainBG.png")).getImage();

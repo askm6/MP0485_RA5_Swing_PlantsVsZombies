@@ -68,7 +68,7 @@ public class GameWindow extends JFrame {
             gp.setActivePlantingBrush(PlantType.FreezePeashooter);
         });
         getLayeredPane().add(freezepeashooter, Integer.valueOf(3));
-        
+
         PlantCard wallnut = new PlantCard(new ImageIcon(this.getClass().getResource("/images/cards/card_wallnut.png")).getImage());
         wallnut.setLocation(305, 8);
         wallnut.setToolTipText("Wall-nut: Use to protect your other plants");

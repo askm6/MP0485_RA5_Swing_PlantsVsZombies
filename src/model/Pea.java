@@ -4,8 +4,8 @@ import view.GamePanel;
 import java.awt.*;
 
 /**
- * Represents a standard Pea projectile shot by a Peashooter.
- * It moves forward across the lane and damages zombies upon collision.
+ * Represents a standard Pea projectile shot by a Peashooter. It moves forward
+ * across the lane and damages zombies upon collision.
  */
 public class Pea {
 
@@ -15,7 +15,7 @@ public class Pea {
 
     /**
      * Constructs a Pea object with a given lane and starting X position.
-     * 
+     *
      * @param parent Reference to the GamePanel
      * @param lane The lane (0-4) the pea travels through
      * @param startX Initial X-coordinate
@@ -68,7 +68,6 @@ public class Pea {
     }
 
     // Getters and setters
-
     public int getPosX() {
         return posX;
     }

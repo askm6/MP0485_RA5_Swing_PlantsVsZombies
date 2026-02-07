@@ -1,6 +1,5 @@
 package model;
 
-
 import view.GamePanel;
 
 /**
@@ -14,7 +13,6 @@ public abstract class Plant {
     private int y;
 
     private GamePanel gp;
-
 
     public Plant(GamePanel parent, int x, int y) {
         this.x = x;

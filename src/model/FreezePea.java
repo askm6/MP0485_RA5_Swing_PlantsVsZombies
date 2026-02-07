@@ -5,8 +5,9 @@ import java.awt.*;
 
 /**
  * Represents a FreezePea projectile.
- * 
- * FreezePeas are shot by FreezePeashooters and deal damage while slowing zombies.
+ *
+ * FreezePeas are shot by FreezePeashooters and deal damage while slowing
+ * zombies.
  */
 public class FreezePea extends Pea {
 
@@ -14,7 +15,7 @@ public class FreezePea extends Pea {
      * Constructor for the FreezePea.
      *
      * @param parent The GamePanel this projectile is part of.
-     * @param lane   The lane in which the projectile travels.
+     * @param lane The lane in which the projectile travels.
      * @param startX The starting horizontal position (X coordinate).
      */
     public FreezePea(GamePanel parent, int lane, int startX) {
@@ -22,7 +23,8 @@ public class FreezePea extends Pea {
     }
 
     /**
-     * Moves the projectile forward and handles collision detection with zombies.
+     * Moves the projectile forward and handles collision detection with
+     * zombies.
      */
     @Override
     public void advance() {
@@ -32,7 +34,7 @@ public class FreezePea extends Pea {
         // Loop through all zombies in the same lane
         for (int i = 0; i < gp.getLaneZombies().get(getMyLane()).size(); i++) {
             Zombie z = gp.getLaneZombies().get(getMyLane()).get(i);
-            
+
             // Define the hitbox of the zombie
             Rectangle zRect = new Rectangle(z.getPosX(), 109 + getMyLane() * 120, 400, 120);
 

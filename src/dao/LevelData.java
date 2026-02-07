@@ -10,12 +10,12 @@ public class LevelData {
     public static final String[][] LEVEL_CONTENT = {
         {"NormalZombie"},
         {"NormalZombie", "ConeHeadZombie"},
-        {"NormalZombie", "ConeHeadZombie","RunnerZombie"}
+        {"NormalZombie", "ConeHeadZombie", "RunnerZombie"}
     };
     public static final int[][][] LEVEL_VALUE = {
         {{0, 150}},
         {{0, 75}, {76, 150}},
-        {{0, 49}, {50, 99},{100, 150}}
+        {{0, 49}, {50, 99}, {100, 150}}
     };
 
     private static final File LEVEL_FILE = new File("LEVEL_CONTENT.vbhv");

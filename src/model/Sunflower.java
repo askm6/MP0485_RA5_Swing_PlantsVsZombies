@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 
 /**
  * Represents the Sunflower plant, which periodically generates sun points.
- * 
+ *
  * Sun points are used as a resource to plant other units.
  */
 public class Sunflower extends Plant {
@@ -20,8 +20,8 @@ public class Sunflower extends Plant {
      * Constructor for the Sunflower.
      *
      * @param parent The GamePanel this plant belongs to.
-     * @param x      The column position of the sunflower.
-     * @param y      The row position of the sunflower.
+     * @param x The column position of the sunflower.
+     * @param y The row position of the sunflower.
      */
     public Sunflower(GamePanel parent, int x, int y) {
         super(parent, x, y);
