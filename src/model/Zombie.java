@@ -85,7 +85,6 @@ public class Zombie {
      */
     public void slow() {
         slowInt = 50;
-        health = 0;
     }
 
     /**
