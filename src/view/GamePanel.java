@@ -269,7 +269,7 @@ public class GamePanel extends JLayeredPane implements MouseMotionListener {
                     switch (activePlantingBrush) {
                         case Sunflower:
                             colliders[x + y * 9].setPlant(new Sunflower(GamePanel.this, x, y));
-                            //break;
+                            break;
                         case Peashooter:
                             colliders[x + y * 9].setPlant(new Peashooter(GamePanel.this, x, y));
                             break;
